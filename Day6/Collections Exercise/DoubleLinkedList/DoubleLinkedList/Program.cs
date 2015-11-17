@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace LinkedList
+namespace DoubleLinkedList
 {
 
 	public class Person
@@ -20,40 +20,63 @@ namespace LinkedList
 			Location = location;
 		}
 
+		public Person()
+		{
+			Id = null;
+			Name = null;
+			Location = null;
+		}
+
 	}
 
-	public class PersonList
+	public class PersonList : IEnumerable
 	{
-		
+
 		public Person Head;
+		public Person Current;
 
 		public PersonList()
 		{
 			Head = null;
+			Current = null;
 		}
 
-		public Person Insert(string id, string name, string location)
+		public void Insert(string id, string name, string location)
 		{
 			Person person = new Person(id, name, location);
-			person.Next = Head;
 
-			if (Head != null) 
+			if (Head == null) 
 			{
-				Head.Previous = person;
+				Head = new Person();
+				Head.Next = person;
+				person.Previous = Head;
+				Current = person;
+			}
+			else 
+			{
+				Current.Next = person;
+				person.Previous = Current;
+				Current = person;
 			}
 
-			Head = person;
-
-			return person;
+		}
+			
+		public IEnumerator GetEnumerator ()
+		{
+			return new PersonEnumerator (Head);
 		}
 
 	}
 
 	class PersonEnumerator : IEnumerator{
-		
-		public PersonList personList;
+
+		public PersonList personList = new PersonList();
 
 		public Person currentNode;
+
+		public PersonEnumerator(Person head){
+			currentNode = head;
+		}
 
 		public object Current {
 			get
@@ -64,24 +87,17 @@ namespace LinkedList
 
 		public bool MoveNext ()
 		{
-			if (personList == null) 
-			{
-				personList = new PersonList();
-				personList.Insert ("1", "A", "X");
-				personList.Insert ("2", "B", "Y");
-				personList.Insert ("3", "C", "Z");
-			}
-			if (currentNode == null && personList.Head != null) 
-			{
+			if (currentNode == null && personList.Head != null) {
 				currentNode = personList.Head;
 				return true;
-			} 
+			}
 			if ( currentNode.Next != null) 
 			{
 				currentNode = currentNode.Next;
 				return true;
 			} 
-			else {
+			else 
+			{
 				return false;
 			}
 
@@ -93,21 +109,18 @@ namespace LinkedList
 		}
 	}
 
-	class PersonEnumerable : IEnumerable{
-		public IEnumerator GetEnumerator (){
-			return new PersonEnumerator ();
-		}
-	}
 
-	 
 	class MainClass
 	{
 		public static void Main (string[] args)
 		{
-			
-			PersonEnumerable personEnumerable = new PersonEnumerable();
 
-			foreach (Person person in personEnumerable) 
+			PersonList personList = new PersonList();
+			personList.Insert ("1", "A", "X");
+			personList.Insert ("2", "B", "Y");
+			personList.Insert ("3", "C", "Z");
+
+			foreach (Person person in personList) 
 			{
 				Console.WriteLine (person.Id);
 			}

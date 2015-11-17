@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{E5FA0DFE-C3B4-4092-AAF6-74B1051A2B40}</ProjectGuid>
+    <ProjectGuid>{74B67684-94E1-4F0E-850E-E33317CB985B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LinkedList</RootNamespace>
-    <AssemblyName>LinkedList</AssemblyName>
+    <RootNamespace>DoubleLinkedList</RootNamespace>
+    <AssemblyName>DoubleLinkedList</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

@@ -1,5 +1,0 @@
-/Users/vasundharakuchibhatla/Projects/Xamarin/LinkedList/LinkedList/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/Users/vasundharakuchibhatla/Projects/Xamarin/LinkedList/LinkedList/bin/Debug/LinkedList.exe.mdb
-/Users/vasundharakuchibhatla/Projects/Xamarin/LinkedList/LinkedList/bin/Debug/LinkedList.exe
-/Users/vasundharakuchibhatla/Projects/Xamarin/LinkedList/LinkedList/obj/x86/Debug/LinkedList.exe
-/Users/vasundharakuchibhatla/Projects/Xamarin/LinkedList/LinkedList/obj/x86/Debug/LinkedList.exe.mdb
