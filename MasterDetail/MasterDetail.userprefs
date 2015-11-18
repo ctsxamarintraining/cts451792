@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="iOS/MasterDetail.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MasterDetail/MasterPage.cs">
+    <Files>
+      <File FileName="MasterDetail/MasterDetail.cs" Line="11" Column="32" />
+      <File FileName="MasterDetail/MasterPage.cs" Line="19" Column="4" />
+      <File FileName="MasterDetail/DetailPage.cs" Line="1" Column="1" />
+      <File FileName="MasterDetail/TabPage.cs" Line="16" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
