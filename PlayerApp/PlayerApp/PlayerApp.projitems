@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{2C5B3D68-9E77-4859-BAEC-35ADB53C5DA1}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>PlayerApp</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)PlayerApp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CreateFootballPlayerPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FootballPlayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FootballPlayerCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FootballPlayerDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FootballPlayerListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FootballPlayersListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LoginPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Player.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IGalleryImageService.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PlayerApp", "PlayerApp\PlayerApp.shproj", "{2C5B3D68-9E77-4859-BAEC-35ADB53C5DA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerApp.Droid", "Droid\PlayerApp.Droid.csproj", "{534D829F-BD3F-479A-92D7-B161C403AD2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{534D829F-BD3F-479A-92D7-B161C403AD2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{534D829F-BD3F-479A-92D7-B161C403AD2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{534D829F-BD3F-479A-92D7-B161C403AD2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{534D829F-BD3F-479A-92D7-B161C403AD2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
